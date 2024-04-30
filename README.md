@@ -1,5 +1,5 @@
 body {
-background-image: url("wp7733426.png");
+background-image: url("wp7733426.webp");
 "
 )
 )
