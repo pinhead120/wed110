@@ -1,10 +1,7 @@
 body {
-background-image: url("wp7733426.webp");
-"
-)
-)
-");
-	background-size: 2.5%;
+	background-image: url("images/pokebg.jpg");
+	background-repeat: repeat-x;
+/*	background-size: 2.5%;*/
 }
 
 h1 {
@@ -79,6 +76,18 @@ a:focus {
 	width: 180px;
 }
 
+
+.img_large {
+	width: 100px;
+	height: 100px;
+}
+
+.img_large:hover {
+	/*width: 200px;
+	height: 200px;*/
+	transform: scale(2);
+}
+
 .player {
 	margin-left: auto;
 	margin-right: auto;
@@ -108,6 +117,7 @@ a:focus {
 	background-color: #FFFFFFCC;
 	background-color: rgba(255, 255, 255, 80%);
 	width: 100%;
+	min-height: 1000px;
 }
 
 
@@ -223,3 +233,27 @@ iframe {
 	}
 	80% {
 		background-color: purple;
+	}
+	100% {
+		background-color: red;
+	}
+}
+
+@keyframes pk_float {
+	0% {
+		top: 0px;
+	}	
+	50% {
+		top: 100px;
+	}
+	100% {
+		top: 0px;
+	}
+}
+
+.poke_flt {
+	position: relative;
+	animation-name: pk_float;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
